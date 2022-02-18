@@ -22,6 +22,7 @@
 		B5D4405D27BF897600B01E8C /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4405C27BF897600B01E8C /* Keys.swift */; };
 		B5D4406227BF8B5800B01E8C /* DictParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4406127BF8B5800B01E8C /* DictParser.swift */; };
 		B5D4406727BF913E00B01E8C /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4406627BF913E00B01E8C /* Haptic.swift */; };
+		B5D4406927BFA52A00B01E8C /* Notify.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4406827BFA52A00B01E8C /* Notify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B5D4405C27BF897600B01E8C /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		B5D4406127BF8B5800B01E8C /* DictParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictParser.swift; sourceTree = "<group>"; };
 		B5D4406627BF913E00B01E8C /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
+		B5D4406827BFA52A00B01E8C /* Notify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				B5D4405127BF689100B01E8C /* Theme.swift */,
 				B5D4406627BF913E00B01E8C /* Haptic.swift */,
 				B5D4405C27BF897600B01E8C /* Keys.swift */,
+				B5D4406827BFA52A00B01E8C /* Notify.swift */,
 				B5D4406127BF8B5800B01E8C /* DictParser.swift */,
 			);
 			path = Helpers;
@@ -244,6 +247,7 @@
 				B5D4405027BF683300B01E8C /* MainView.swift in Sources */,
 				B5D4403A27BF670400B01E8C /* MainVC.swift in Sources */,
 				B5D4404D27BF67CD00B01E8C /* BaseView.swift in Sources */,
+				B5D4406927BFA52A00B01E8C /* Notify.swift in Sources */,
 				B5D4406227BF8B5800B01E8C /* DictParser.swift in Sources */,
 				B5D4403627BF670400B01E8C /* AppDelegate.swift in Sources */,
 				B5D4403827BF670400B01E8C /* SceneDelegate.swift in Sources */,
@@ -397,6 +401,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,6 +430,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -61,6 +61,17 @@ class MainVC: BaseVC {
         if let index = state[ad: Keys.cells].lastIndex(where: { $0[s: Keys.type] == StateType.life.rawValue}) {
             state[ad: Keys.cells].remove(at: index)
             Speaker.say(text: "Он нет! Они убили Кенни!")
+            showCountLived()
+        }
+    }
+    
+    func showCountLived() {
+        let countLived = state[ad: Keys.cells].filter { $0[s: Keys.type] == StateType.life.rawValue}.count
+        if countLived == 0 {
+            Notify.showWith(title: "Убили последнего")
+        } else {
+            Notify.showWith(title: "Ещё осталось \(countLived) \(countLived.russianPlural(form1: "жизнь", form2: "жизни", form5: "жизней"))")
+
         }
     }
 }
