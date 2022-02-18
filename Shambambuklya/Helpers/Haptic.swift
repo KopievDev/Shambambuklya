@@ -30,14 +30,15 @@ enum Haptic {
 }
 
 enum Speaker {
-    static func say(text: String, rate: Float = 0.5) {
+    static func say(text: String, rate: Float = 0.5, afterTime: Double = 0) {
         let queque = DispatchQueue(label: "Speaker", qos: .userInitiated, attributes: .concurrent)
-        queque.async {
+        queque.asyncAfter(deadline: .now() + afterTime) {
             let utterance = AVSpeechUtterance(string: text)
             utterance.voice = AVSpeechSynthesisVoice(language: "ru-RU")
             utterance.rate = rate
+            utterance.pitchMultiplier = 1.5
             let synth = AVSpeechSynthesizer()
-            synth.speak(utterance)            
+            synth.speak(utterance)
         }
     }
 }

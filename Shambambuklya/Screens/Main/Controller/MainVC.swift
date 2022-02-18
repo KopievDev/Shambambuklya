@@ -9,7 +9,8 @@ import UIKit
 
 class MainVC: BaseVC {
     //MARK: - Properties
-    let v = MainView()    
+    let v = MainView()
+    
     //MARK: - Life cycle
     override func loadView() {view = v}
     override func viewDidLoad() {
@@ -42,6 +43,7 @@ class MainVC: BaseVC {
             state[i: Keys.countDead] = 0
             if state[i: Keys.countLive] == 3 {
                 state[ad: Keys.cells].append([Keys.type: StateType.life.rawValue])
+                Speaker.say(text: "Ку-ку!")
                 state[i: Keys.countLive] = 0
             }
         case .dead:
